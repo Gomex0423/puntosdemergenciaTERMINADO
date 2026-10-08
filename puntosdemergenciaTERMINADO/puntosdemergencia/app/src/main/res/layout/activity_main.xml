@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+    <TextView
+
+        android:id="@+id/tvTitulo"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Puntos de Emergencia"
+
+        android:textSize="24sp"
+
+        android:padding="16dp"/>
+
+
+    <TextView
+
+        android:id="@+id/tvUbicacion"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Buscando ubicación..."
+
+        android:padding="10dp"/>
+
+
+    <Button
+
+        android:id="@+id/btnMiUbicacion"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="MI UBICACIÓN"/>
+
+
+    <Button
+        android:id="@+id/btnLlamar123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LLAMAR AL 123"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#D32F2F" />
+
+
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="8dp" />
+
+
+    <org.osmdroid.views.MapView
+
+        android:id="@+id/mapView"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+
+        android:layout_weight="1"/>
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="© OpenStreetMap contributors"
+
+        android:textSize="10sp"
+
+        android:gravity="end"
+
+        android:padding="4dp"/>
+
+</LinearLayout>
+
